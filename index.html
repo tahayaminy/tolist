@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tolist</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./css/font.css">
+  </head>
+  <body dir="rtl">
+    <article>
+      <section id="pannel">
+        <input placeholder="کاری که باید انجام بدم..." type="text" id="work"  onkeypress="if(event.keyCode === 13){add()}"/>
+        <i class="fas fa-clipboard-list" onclick="add()"></i>
+      </section>
+      <section id="lists">
+          <p>hello
+            <i class="fas fa-check-circle" onclick="end(this)"></i>
+            <i class="clear"></i>
+          </p>
+      </section>
+    </article>
+  </body>
+  <script src="./index.js"></script>
+</html>
